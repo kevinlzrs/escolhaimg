@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de imagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Escolha uma opção</h1>
+    
+    <button id="btnSol" onclick="exibirImagem('sol', this)">Ver Sol</button>
+    <button id="btnLua" onclick="exibirImagem('lua', this)">Ver Lua</button>
+    <button id="btnEstrela" onclick="exibirImagem('estrela', this)">Ver Estrela</button>
+    <button id="nuvem" onclick="exibirImagem('cometa', this)">Ver cometa</button>
+    <button id="marte" onclick="exibirImagem('marte', this)">Ver marte</button>
+
+    <div id="imagemContainer">
+        <img src="" alt="Imagem" id="imagem" style="display: none;">
+    </div>
+
+    <p id="texto">Clique em um dos botões acima para exibir uma imagem e uma mensagem</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
